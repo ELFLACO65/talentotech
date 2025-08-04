@@ -5,9 +5,9 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    display: grid;
-    min-height: auto;
-    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -28,7 +28,7 @@ body {
     grid-template-columns: 280px 1fr;
     gap: 0px;
     padding: 0px;
-    height: 100vh;
+    flex: 1;
 }
 
 .sidebar {
@@ -100,10 +100,8 @@ body {
     text-align: center;
     padding: 10px;
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
 }
+
 
 .correo {
     text-decoration: none;
@@ -125,4 +123,14 @@ img{
     padding: #3ab7e9;
     border-style: double;
     border-width:10px ;
+}
+
+.dato-clave {
+  background-color: #d4edda;
+  padding: 1em;
+  border: 1px solid #c3e6cb;
+  margin-top: 1em;
+  text-align: left;
+  border-radius: 5px;
+  font-size: 1rem;
 }
